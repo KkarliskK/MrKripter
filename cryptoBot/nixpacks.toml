@@ -1,0 +1,8 @@
+[phases.build]
+cmds = ['mvn clean compile']
+
+[phases.install]
+cmds = ['mvn dependency:resolve']
+
+[start]
+cmd = 'mvn exec:java -Dexec.mainClass=Main'
